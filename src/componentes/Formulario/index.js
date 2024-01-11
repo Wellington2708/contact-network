@@ -23,6 +23,12 @@ const Formulario = (props) => {
 
 const aoSalvar = (evento) => {
     evento.preventDefault();
+    props.aoConhecidoCadastrado({
+        nome,
+        idade,
+        imagem,
+        local
+    })
 }
 
     return (
