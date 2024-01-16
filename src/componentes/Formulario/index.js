@@ -6,18 +6,13 @@ import { useState } from 'react'
 
 
 const Formulario = (props) => {
-    const categoria = [
-        "Igreja",
-        "Escola / Faculdade",
-        "Trabalho",
-        "Familia",
-        "Azar"
-    ];
 
     const [nome, setNome] = useState('')
     const [idade, setIdade] = useState('')
     const [imagem, setImagem] = useState('')
+    const [caracteristica, setCaracteristica] = useState('')
     const [local, setLocal] = useState('')
+    
 
 
 
@@ -27,8 +22,10 @@ const aoSalvar = (evento) => {
         nome,
         idade,
         imagem,
-        local
+        local,
+        caracteristica
     })
+
 }
 
     return (
@@ -52,10 +49,15 @@ const aoSalvar = (evento) => {
                     placeholder="Digite o endereço de sua Imagem"
                     valor={imagem}
                     aoAlterado={valor => setImagem(valor)} />
+                 <CampoTexto 
+                    label="Característica" 
+                    placeholder="Digite sua característica"
+                    valor={caracteristica}
+                    aoAlterado={valor => setCaracteristica(valor)} />
                 <ListaSuspensa 
                     obrigatorio={true} 
                     label="Categoria" 
-                    itens={categoria} 
+                    itens={props.nomeDasCategorias} 
                     valor={local}
                     aoAlterado={valor => setLocal(valor)}/>
                 <Botao>
