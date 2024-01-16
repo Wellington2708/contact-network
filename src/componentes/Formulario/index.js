@@ -26,6 +26,12 @@ const aoSalvar = (evento) => {
         caracteristica
     })
 
+    setNome('')
+    setIdade('')
+    setImagem('')
+    setCaracteristica('')
+    setLocal('')
+
 }
 
     return (

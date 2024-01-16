@@ -10,7 +10,7 @@ const Categoria = (props)=> {
         <section className='categoria' style={{css}}>
             <h3 style={{borderColor: props.corPrimaria}}>{props.nome}</h3>
             <div className='membros'>
-                {props.conhecidos.map(conhecido => <Membro nome={conhecido.nome} idade={conhecido.idade} imagem={conhecido.imagem} caracteristica={conhecido.caracteristica}/>)}
+                {props.conhecidos.map(conhecido => <Membro  corDeFundo={props.corPrimaria} key={conhecido.nome} nome={conhecido.nome} idade={conhecido.idade} imagem={conhecido.imagem} caracteristica={conhecido.caracteristica}/>)}
             </div>
             
         </section>
