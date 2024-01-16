@@ -5,8 +5,8 @@ This project was developed and created by Alura, with the idea of registering co
 
 ## Contents
 
-- [Installation](#create-react-app)
-- [Running the Project](#npm-start)
+- Installation (create-react-app)
+- Running the Project (#npm-start)
 - [Screenshots](#here-is-a-screenshot-of-my-project)
 ![Header](/public/imagens/banner.png)
 ![Registration](/public/imagens/cadastro.png)
